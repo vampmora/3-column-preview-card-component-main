@@ -15,7 +15,7 @@
     --very-light-gray : hsl(0, 0%, 95%);  /*(background, headings, buttons)*/
 }
 
-.section{
+main{
    
     margin: 20px;
 }
@@ -184,7 +184,7 @@ body{
          
     }  
   
-    .section{
+    main{
         margin-left: 80px;
     }
    
