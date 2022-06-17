@@ -1,0 +1,305 @@
+/*
+   .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    */
+
+/*    
+    Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bright-orange:hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75) ; /*(paragraphs)*/
+    --very-light-gray : hsl(0, 0%, 95%);  /*(background, headings, buttons)*/
+}
+
+section{
+   
+    margin: 20px;
+}
+body{
+    background-color: var(--very-light-gray);
+}
+
+
+/*1st card*/
+.first-card{
+    background-color: var(--bright-orange);
+    min-width: 100%;;
+    padding:30px;
+    text-align: left;
+    border-radius: 20px  20px 0 0 ;
+   
+}
+
+.first-card .image{
+    position:absolute;
+    left:70px;
+   
+}
+
+.first-card h2{
+    padding: 80px 20px 30px;
+    color: var(--very-light-gray);
+    font-size: 2.5rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.first-card p{
+   width:100%;
+    max-width:450px;
+    padding: 0 20px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    color:var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.first-card button{
+    margin:20px;
+    padding:15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: capitalize;
+    color: var(--bright-orange);
+    font-weight: 400;
+}
+
+/*2nd card*/
+
+.second-card{
+    background-color: var(--dark-cyan);
+    min-width: 100%;;
+    padding:30px;
+    text-align: left;
+ 
+}
+
+.second-card .image{
+    position:absolute;
+    left:70px;
+   
+}
+
+.second-card h2{
+    padding: 80px 20px 30px;
+    color: var(--very-light-gray);
+    font-size: 2.5rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.second-card p{
+   width:100%;
+    max-width:450px;
+    padding: 0 20px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    color:var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.second-card button{
+    margin:20px;
+    padding:15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: capitalize;
+    color: var(--dark-cyan);
+    font-weight: 400;
+}
+
+/*3rd card*/
+
+.third-card{
+    background-color: var(--very-dark-cyan);
+    min-width: 100%;;
+    padding:30px;
+    text-align: left;
+    border-radius:  0 0 20px  20px;
+}
+
+.third-card .image{
+    position:absolute;
+    left:70px;
+   
+}
+
+.third-card h2{
+    padding: 80px 20px 30px;
+    color: var(--very-light-gray);
+    font-size: 2.5rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.third-card p{
+   width:100%;
+    max-width:450px;
+    padding: 0 20px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    color:var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.third-card button{
+    margin:20px;
+    padding:15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: capitalize;
+    color: var(--very-dark-cyan);
+    font-weight: 400;
+}
+
+.attribution{
+ 
+  text-align: center;
+  margin:5px 70px;
+  
+}
+
+
+@media (min-width:788px){
+      .contianer{
+        display:flex;
+        flex-direction: row;
+        min-width: 600px;
+         
+    }  
+  
+    section{
+        margin-left: 80px;
+    }
+   
+    /*1st card*/
+    .first-card{
+        min-width:200px;
+        border-radius: 10px 0 0 10px;
+        height:90vh;
+        padding-top:50px;
+    }
+
+    .first-card .image{
+        position: absolute;
+        left:165px;
+    }
+
+    .first-card h2{
+        padding: 140px  0 15px 55px; 
+    }
+
+    .first-card p{
+        margin:20px;
+        padding:35px;
+        max-width: 340px;
+        width:400px;  /**//**/
+         
+     }
+
+     .first-card button{
+        margin-left: 55px;
+        margin-top:80px;
+     }
+    
+    /*2nd card*/
+    .second-card{
+        height:90vh;
+        min-width:250px;
+        padding-top:50px;
+        
+    }
+    .second-card .image{
+    
+        position: relative;
+        left:55px;/*50*/
+    }
+
+    .second-card h2{
+       padding-left: 55px;
+    }
+
+    .second-card p{
+        margin:20px;
+        padding:35px;
+        max-width: 340px; /*370*/
+        width:400px;  /**//**/
+     }
+
+     .second-card button{
+        margin-left: 55px;
+        margin-top:80px;
+     }
+
+    /*3rd card*/
+    .third-card{
+        height:90vh;
+        min-width:280px;
+        padding-top:50px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .third-card .image{
+        position: relative;
+        left:55px;
+    }
+
+    .third-card h2{
+        padding-left: 55px;
+    }
+
+    .third-card p{
+        margin:20px;
+        padding:35px;
+        max-width: 340px;
+        width:400px;  /**//**/
+     }
+
+     .third-card button{
+        margin-left: 55px;
+        margin-top:80px;
+     }
+     
+     button:hover{
+        cursor: pointer;
+        border: 2px solid var(--transparent-white);
+        color:var(--transparent-white);
+        background-color:transparent;
+     }
+    
+    }
+   
+    
+
+ 
